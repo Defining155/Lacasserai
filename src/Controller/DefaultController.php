@@ -16,4 +16,14 @@ class DefaultController extends AbstractController
             'controller_name' => 'DefaultController',
         ]);
     }
+
+    /**
+     * @Route("/kamers", name="kamers")
+     */
+    public function kamers()
+    {
+        return $this->render('kamers/kamers.html.twig', [
+            'controller_name' => 'DefaultController',
+        ]);
+    }
 }
